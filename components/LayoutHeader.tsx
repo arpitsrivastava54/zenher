@@ -22,9 +22,6 @@ export default function LayoutHeader({ right }: { right?: React.ReactNode }) {
           <Pressable className="p-2 rounded-full bg-gray-100 dark:bg-gray-800">
             <Ionicons name="notifications-outline" size={22} color="#6B7280" />
           </Pressable>
-          <View className="h-8 w-8 rounded-full bg-black items-center justify-center">
-            <Text className="text-white font-bold">SM</Text>
-          </View>
         </View>
       )}
     </View>
