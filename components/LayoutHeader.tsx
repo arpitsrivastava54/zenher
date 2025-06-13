@@ -1,6 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
-import { Image } from 'expo-image';
-import { Pressable, Text, View } from 'react-native';
+import { Image, Pressable, Text, View } from 'react-native';
 
 const logo = require('../assets/images/project/logo.png');
 
@@ -11,7 +10,6 @@ export default function LayoutHeader({ right }: { right?: React.ReactNode }) {
         <Image
           source={logo}
           className="h-7 w-7 mr-2"
-          contentFit="contain"
         />
         <Text className="text-xl font-extrabold text-gray-900 dark:text-white tracking-tight">Zenher</Text>
       </View>

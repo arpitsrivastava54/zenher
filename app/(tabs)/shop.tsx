@@ -1,6 +1,5 @@
-import { Image } from 'expo-image';
 import { useState } from 'react';
-import { FlatList, Pressable, Text, View } from 'react-native';
+import { FlatList, Image, Pressable, Text, View } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 
 const categories = ['All', 'Pads', 'Wellness', 'Supplements'];
@@ -92,7 +91,7 @@ function ProductCard({ product }: { product: any }) {
         <Image
           source={{ uri: product.image }}
           className="h-24 w-full rounded-lg mb-2"
-          contentFit="cover"
+          // contentFit="cover"
         />
         <Text className="font-bold text-gray-900 dark:text-white mb-1" numberOfLines={2}>{product.title}</Text>
         <View className="flex-row items-center mb-1">

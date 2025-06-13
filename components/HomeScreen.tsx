@@ -1,7 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
-import { Image } from 'expo-image';
 import { useState } from 'react';
-import { Pressable, ScrollView, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, Text, View } from 'react-native';
 import { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { Circle, Svg } from 'react-native-svg';
 
@@ -101,8 +100,8 @@ export default function HomeScreen() {
   const totalDays = 28;
   const progress = currentDay / totalDays;
 
-  const logo = require('../assets/images/project/logo.png');
-  const heroImage = require('../assets/images/project/hero-image.png');
+  const logo = require('@/assets/images/project/logo.png');
+  const heroImage = require('@/assets/images/project/hero-image.png');
 
   return (
     <View className="flex-1 bg-white dark:bg-gray-900">
@@ -112,7 +111,7 @@ export default function HomeScreen() {
           <Image
             source={logo}
             className="h-7 w-7 mr-2"
-            contentFit="contain"
+            // contentFit="contain"
           />
           <Text className="text-xl font-extrabold text-gray-900 dark:text-white tracking-tight">Zenher</Text>
         </View>
@@ -135,7 +134,7 @@ export default function HomeScreen() {
           <Image
             source={logo}
             className="h-8 w-8 mr-2"
-            contentFit="contain"
+            // contentFit="contain"
           />
           <Text className="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">Zenher</Text>
         </View>
@@ -150,7 +149,7 @@ export default function HomeScreen() {
           <Image
             source={heroImage}
             className="h-64 w-64 max-w-full"
-            contentFit="contain"
+            // contentFit="contain"
           />
         </View>
         {/* Get Started Button (polished) */}
@@ -246,7 +245,7 @@ export default function HomeScreen() {
                 <Image
                   source={{ uri: product.image }}
                   className="h-24 w-full rounded-lg mb-2"
-                  contentFit="cover"
+                  // contentFit="cover"
                 />
                 <Text className="font-bold text-gray-900 dark:text-white mb-1" numberOfLines={2}>{product.title}</Text>
                 <View className="flex-row items-center mb-1">
@@ -274,7 +273,7 @@ export default function HomeScreen() {
                 <Image
                   source={{ uri: article.image }}
                   className="h-28 w-full rounded-lg mb-2"
-                  contentFit="cover"
+                  // contentFit="cover"
                 />
                 <Text className="font-bold text-gray-900 dark:text-white mb-1" numberOfLines={2}>{article.title}</Text>
                 <Text className="text-sm text-gray-500 dark:text-gray-300" numberOfLines={2}>{article.desc}</Text>
